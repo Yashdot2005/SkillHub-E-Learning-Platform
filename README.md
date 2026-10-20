@@ -86,6 +86,7 @@ The platform focuses on creating a simple and accessible learning experience whi
 
 SkillHub follows a client-server architecture in which users interact with the frontend, PHP processes application requests, and MySQL provides persistent data storage.
 ```sql
+
 flowchart TD
     U([User])
 
@@ -111,6 +112,7 @@ flowchart TD
     U --> UI
     HTML --> AUTH
     JS --> AUTH
+
     AUTH --> COURSE
     AUTH --> EXPERT
     AUTH --> EVENT
@@ -132,7 +134,7 @@ flowchart TD
     CONTACT --> RESP
 
     RESP --> UI
-```
+
 
 **Architecture workflow:**
 
