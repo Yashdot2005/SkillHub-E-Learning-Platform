@@ -82,58 +82,7 @@ The platform focuses on creating a simple and accessible learning experience whi
 | Git          | Tracks source code changes                       |
 | GitHub       | Hosts the project repository                     |
 
-## System Architecture
 
-SkillHub follows a client-server architecture in which users interact with the frontend, PHP processes application requests, and MySQL provides persistent data storage.
-```sql
-
-flowchart TD
-    U([User])
-
-    subgraph FE["Presentation Layer"]
-        UI["SkillHub Web Interface"]
-        HTML["HTML5 and CSS3"]
-        JS["JavaScript and jQuery"]
-        UI --> HTML
-        UI --> JS
-    end
-
-    subgraph BE["Application Layer - PHP"]
-        AUTH["User Authentication"]
-        COURSE["Course Enrollment"]
-        EXPERT["Community Experts"]
-        EVENT["Event Registration"]
-        ADMIN["Admin Dashboard"]
-        CONTACT["Contact Form"]
-    end
-
-    DB[("MySQL Database")]
-
-    U --> UI
-    HTML --> AUTH
-    JS --> AUTH
-
-    AUTH --> COURSE
-    AUTH --> EXPERT
-    AUTH --> EVENT
-    AUTH --> ADMIN
-    AUTH --> CONTACT
-
-    AUTH <--> DB
-    COURSE <--> DB
-    EXPERT <--> DB
-    EVENT <--> DB
-    ADMIN <--> DB
-    CONTACT <--> DB
-
-    AUTH --> RESP["PHP Response"]
-    COURSE --> RESP
-    EXPERT --> RESP
-    EVENT --> RESP
-    ADMIN --> RESP
-    CONTACT --> RESP
-
-    RESP --> UI
 
 
 **Architecture workflow:**
@@ -296,20 +245,18 @@ Contributions, bug reports, and suggestions are welcome.
 5. Push the branch to your fork.
 6. Open a pull request describing your changes.
 
-## License
-
-No license has been specified for this project yet. Add a `LICENSE` file to define the permissions and conditions for using, modifying, and distributing the source code.
 
 ## Author
 
-**SkillHub — Online E-Learning Platform**
+**Yash Ghotekar**
+
+SkillHub — Online E-Learning Platform
 
 Developed using HTML, CSS, JavaScript, jQuery, PHP, and MySQL.
 
+Contributions, improvements, and suggestions are welcome.
+
 ---
 
-*SkillHub — Learn. Connect. Grow.&#x20;*
-
-
-
-how is this remove or add licence for me yash ghotekar
+*SkillHub — Learn. Connect. Grow.*
+⭐ If you find SkillHub helpful, please consider giving this repository a star on GitHub to support the project!
